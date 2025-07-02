@@ -52,8 +52,8 @@ plt.matshow(heatmap)
 plt.show()
 
 img = cv2.imread(img_path)
-heathmap = cv2.resize(heatmap,(img.shape[1],img.shape[0]))
-heatmap = np.uint8(255*heathmap)
+heatmap = cv2.resize(heatmap,(img.shape[1],img.shape[0]))
+heatmap = np.uint8(255*heatmap)
 heatmap = cv2.applyColorMap(heatmap,cv2.COLORMAP_JET)
 sup = heatmap *0.4+img
 cv2.imwrite('C:\\Users\\salva\\OneDrive\\Desktop\\machine-learning\\elefantiafricani.jpg',sup)
